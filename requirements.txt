@@ -2,3 +2,4 @@ streamlit
 pandas
 Faker
 google-generativeai
+python-dotenv
