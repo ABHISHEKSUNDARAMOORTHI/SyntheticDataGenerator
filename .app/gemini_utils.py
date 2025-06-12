@@ -1,12 +1,12 @@
 # gemini_utils.py
 
 import google.generativeai as genai
-
-
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Retrieve the API key
-GOOGLE_API_KEY ="YOUR_ACTUAL_GEMINI_API_KEY_HERE"
+GOOGLE_API_KEY =os.getenv("GEMINI_API_KEY")
 
 # Basic validation for API Key
 if not GOOGLE_API_KEY or GOOGLE_API_KEY == "YOUR_ACTUAL_GEMINI_API_KEY_HERE":
